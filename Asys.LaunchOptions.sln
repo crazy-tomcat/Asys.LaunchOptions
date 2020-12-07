@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.64
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asys.LaunchOptions", "src\Asys.LaunchOptions.csproj", "{C16AC406-FF89-4EA3-93AE-30BE541A5A69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asys.Launch", "example\.Net Framework\Asys.Launch\Asys.Launch.csproj", "{BDB4620F-2C9A-40F5-8DBD-55BC17B6DCBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C16AC406-FF89-4EA3-93AE-30BE541A5A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16AC406-FF89-4EA3-93AE-30BE541A5A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16AC406-FF89-4EA3-93AE-30BE541A5A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16AC406-FF89-4EA3-93AE-30BE541A5A69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB4620F-2C9A-40F5-8DBD-55BC17B6DCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB4620F-2C9A-40F5-8DBD-55BC17B6DCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB4620F-2C9A-40F5-8DBD-55BC17B6DCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB4620F-2C9A-40F5-8DBD-55BC17B6DCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D1819EF-3CFA-4208-AAAF-56D063C615EB}
+	EndGlobalSection
+EndGlobal
