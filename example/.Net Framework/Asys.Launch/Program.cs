@@ -12,6 +12,9 @@ namespace Asys.Launch
         static void Main(string[] args)
         {
             var o = new Options<Parameters>(args);
+
+            var inputFolder = o.Parameters.InputFolder;
+            var outputFolderf = o.Parameters.OutputFolder;
         }
     }
 }

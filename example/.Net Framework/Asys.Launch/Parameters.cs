@@ -10,13 +10,13 @@ namespace Asys.Launch
 {
     public class Parameters
     {
-        [LaunchParameter]
+        [LaunchParameter(Description = "input folder", IsRequired = true)]
         public string InputFolder { get; set; }
 
-        [LaunchParameter]
+        [LaunchParameter(Description = "output folder", IsRequired = true)]
         public string OutputFolder { get; set; }
 
-        [LaunchSwitch]
+        [LaunchSwitch(Description = "auto delete files")]
         public bool AutoDelete { get; set; }
     }
 }

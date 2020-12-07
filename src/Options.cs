@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 
@@ -27,6 +29,12 @@ namespace Asys.LaunchOptions
                 }
             }
 
+            if (args == null || args.Length == 0)
+            {
+                ShowHelp();
+                return;
+            }
+
             var c = args[0][0];
             var start = 0;
             if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
@@ -34,6 +42,12 @@ namespace Asys.LaunchOptions
                 // проверка того что первый символ является буквенным
                 Command = args[0];
                 start = 1;
+            }
+
+            if (Command == "help")
+            {
+                ShowHelp();
+                return;
             }
 
             Parameters = new TParameters();
@@ -51,7 +65,7 @@ namespace Asys.LaunchOptions
                 else if (l[0] == '-')
                 {
                     // переключатель да/нет
-                    _dictionaryParameters[l.Substring(1).ToLower()].Property.SetValue(Parameters, true);
+                    _dictionarySwitches[l.Substring(1).ToLower()].Property.SetValue(Parameters, true);
                 }
             }
         }
@@ -59,6 +73,23 @@ namespace Asys.LaunchOptions
         public string Command { get; }
 
         public TParameters Parameters { get; }
+
+        private void ShowHelp()
+        {
+            Console.WriteLine("Usage:");
+            Console.WriteLine($"{Path.GetFileName(Assembly.GetEntryAssembly().Location)} /paramName=paramValue [-option1 [-option2]]");
+            Console.WriteLine("Options:");
+            foreach (var option in _dictionaryParameters)
+            {
+                Console.WriteLine($"  /{option.Key}  {option.Value.Attribute.Description}");
+            }
+
+            Console.WriteLine("Switches:");
+            foreach (var @switch in _dictionarySwitches)
+            {
+                Console.WriteLine($"  -{@switch.Key}  {@switch.Value.Attribute.Description}");
+            }
+        }
 
         private Dictionary<string, LaunchProperty> _dictionaryParameters = new Dictionary<string, LaunchProperty>();
 
