@@ -1,3 +1,6 @@
+NuGet Package:
+https://www.nuget.org/packages/Asys.LaunchOptions/
+
 Example
 
 Create class for options:
