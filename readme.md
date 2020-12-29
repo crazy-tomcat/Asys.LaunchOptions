@@ -1,5 +1,4 @@
-NuGet Package:
-https://www.nuget.org/packages/Asys.LaunchOptions/
+[![NuGet version](https://badge.fury.io/nu/Asys.LaunchOptions.png)](https://badge.fury.io/nu/Asys.LaunchOptions)
 
 Example
 
