@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net472;netcoreapp3.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net472;netcoreapp3.1;net5.0;net6.0;net8.0</TargetFrameworks>
     <Authors>crazy-tomcat</Authors>
     <Company />
     <RepositoryUrl>https://github.com/crazy-tomcat/Asys.LaunchOptions</RepositoryUrl>
