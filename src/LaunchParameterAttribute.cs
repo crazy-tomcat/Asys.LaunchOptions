@@ -1,11 +1,11 @@
 ﻿namespace Asys.LaunchOptions
 {
-    public class LaunchParameterAttribute
-        : LaunchAttribute
-    {
-        public LaunchParameterAttribute()
-            : base(LaunchAttributeType.Parameter)
-        {
-        }
-    }
+	public class LaunchParameterAttribute
+		: LaunchAttribute
+	{
+		public LaunchParameterAttribute()
+			: base(LaunchAttributeType.Parameter)
+		{
+		}
+	}
 }

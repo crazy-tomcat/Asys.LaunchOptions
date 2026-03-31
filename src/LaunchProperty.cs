@@ -2,16 +2,18 @@
 
 namespace Asys.LaunchOptions
 {
-    internal class LaunchProperty
-    {
-        public LaunchProperty(LaunchAttribute attribute, PropertyInfo property)
-        {
-            Attribute = attribute;
-            Property = property;
-        }
+	internal class LaunchProperty
+	{
+		public LaunchProperty(LaunchAttribute attribute, PropertyInfo property)
+		{
+			Attribute = attribute;
+			Property = property;
+		}
 
-        public LaunchAttribute Attribute { get; }
+		public LaunchAttribute Attribute { get; }
 
-        public PropertyInfo Property { get; }
-    }
+		public PropertyInfo Property { get; }
+
+		public string Value { get; set; } = string.Empty;
+	}
 }
